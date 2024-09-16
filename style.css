@@ -1,11 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
 :root {
-    --primary : #b74b4b;
-    --secondary : white;
-    --background : black;
-     /* --accent : untuk warna yang dijadikan MARK. semacam point of view */
-}
+    --primary : #2C3E50;
+    --secondary : #ECF0F1;
+    --background : #FDFEFE;
+    --accent : #1ABC9C;
+    --text-color: #34495E;
+     /* Primary Color (Dark Blue): #2C3E50
+     Secondary Color (Light Gray): #ECF0F1
+     Accent Color (Teal): #1ABC9C
+     Text Color (Dark Gray): #34495E
+     Background Color (Off-white): #FDFEFE */
+    }
 
 
 *{
