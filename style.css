@@ -310,6 +310,81 @@ span{
     width: fit-content;
 }
 
+.skills{
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 700px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.skills-container{
+    /* border: 1px solid blue; */
+    width: 95%;
+    height: 100%;
+    align-items: center;
+    justify-content:flex-start;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.skills-row{
+    /* border: 1px solid yellow; */
+    width: 100%;
+    height: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.skills-card{
+    background-color: var(--secondary);
+    width: 30%;
+    height: 90%;
+    margin : 20px 20px ;
+    align-items: flex-start;
+    padding: 2.5rem;
+}
+
+.skills-card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px var(--secondary);
+    transition: 0.2s ease;
+}
+
+.skills-card i{
+    font-size: 4rem;
+    color: var(--text-color);
+}
+
+.skills-card h3{
+    font-size: 2rem;
+    color: var(--text-color);
+    margin: 0.4rem 0rem;
+}
+
+.skills-card h5{
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--text-color);
+    margin: 0.4rem 0rem;
+    margin-bottom: 1.2rem;
+}
+
+.skills-card a{
+    font-size: 1rem;
+    color: var(--text-color);
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+
 @keyframes cursor{
     to{
         border-left:  3px solid var(--primary);
