@@ -384,6 +384,13 @@ span{
     width: fit-content;
 }
 
+.education-row{
+    border: 1px solid green;
+    width: 100%;
+    height: 20%;
+    flex-direction: row;
+}
+
 
 @keyframes cursor{
     to{
