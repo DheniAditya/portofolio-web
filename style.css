@@ -415,6 +415,15 @@ span{
     font-size: large;
 }
 
+.education-carousel{
+    border: 1px solid blue;
+}
+
+.education-card {
+    border: 1px solid gray;
+    width: 50%;
+    height: 600px;
+}
 
 @keyframes cursor{
     to{
