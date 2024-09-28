@@ -389,6 +389,30 @@ span{
     width: 100%;
     height: 20%;
     flex-direction: row;
+    display: flex;
+    position: relative;
+}
+
+.leading-education{
+    border: 1px solid yellow;
+    width: 100%;
+    height: 100%;
+}
+
+.education-button{
+    border: 1px solid red;
+    width: 17%;
+    height: 60px;
+    background-color: var(--primary);
+    justify-content: center;
+    display: flex;
+}
+
+.text-edubutton{
+    color: var(--secondary);
+    align-self: center;
+    text-align: center;
+    font-size: large;
 }
 
 
