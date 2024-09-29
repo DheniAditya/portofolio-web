@@ -456,15 +456,30 @@ span{
     width: 100%;
     height: 700px;
     align-items: center;
+    justify-content: center;
     display: flex;
     padding-bottom: 10%;
+    flex-direction: column;
 }
 
 .offer-container{
     background-color: var(--primary);
+    width: 85%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
-
+.offer-button{
+    background-color: var(--primary);
+    width: 20%;
+    height: 15%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 @keyframes scroll {
     0% {
