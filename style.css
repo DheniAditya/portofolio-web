@@ -417,12 +417,39 @@ span{
 
 .education-carousel{
     border: 1px solid blue;
+    flex-direction: row;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    white-space: nowrap;
 }
 
 .education-card {
     border: 1px solid gray;
     width: 50%;
     height: 600px;
+    scroll-snap-align: start;
+    flex-shrink: 0; 
+    animation: scroll 7s linear infinite;
+}
+
+.card-educard{
+    border: 1px solid green;
+    width: 100%;
+    height: 80%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    80%{
+        transform: translateX(-100%);
+    }
 }
 
 @keyframes cursor{
