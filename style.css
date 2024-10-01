@@ -37,7 +37,7 @@ body{
 }
 
 header{
-    margin-top: 20px;
+    margin-top: 10px;
     position: fixed;
     top: 0;
     left: 0;
@@ -122,6 +122,7 @@ section{
 }
 
 .home{
+    margin-top : 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -130,8 +131,8 @@ section{
 }
 
 .home .home-content h1{
-    font-size: 6rem;
-    font-weight:700;
+    font-size: 4rem;
+    font-weight:600;
     line-height:1.3;
 }
 
@@ -157,17 +158,7 @@ span{
 
 .home-img img{
     position: relative;
-    width: 32vw;
-    border-radius: 0%;
-    box-shadow: 0 0 25px solid var(--primary);
-    cursor: pointer;
-    transition: 0.2s linear;
-}
-
-.home-img img:hover{
-    font-size: 1.8rem;
-    font-weight: 500;
-}
+    width: 32vw;}
 
 .social-icons a{
     display: inline-flex;
@@ -185,10 +176,9 @@ span{
 }
 
 .social-icons a:hover{
-    color: black;
     transform: scale(1.3) translateY(-5px);
-    background-color: var(--primary);
     box-shadow: 0 0 25px var(--primary);
+    border: none;
 }
 
 .btn{
@@ -213,10 +203,13 @@ span{
 }
 
 .typing-text{
-    font-size: 34px;
+    font-size: 55px;
     font-weight: 600;
     min-width: 280px;
 }
+
+
+/* Animasi Kalimat kelip2
 
 .typing-text span{
     position: relative;
@@ -238,6 +231,24 @@ span{
     right: -8;
     animation: cursor 0.6s infinite;
 }
+
+@keyframes words{
+    0%, 35%{
+        content: "Web Developer";
+    }
+    36%, 70%{
+        content: "Mobile Dev";
+    }
+    71%, 100%{
+        content: "Front-end Dev";
+    }
+    71%, 100%{
+        content: "Back-end Dev";
+    }
+    71%, 100%{
+        content: "Fullstack Dev";
+    }
+} */
 
 .service-section{
     /* border: 1px solid white; */
@@ -497,24 +508,6 @@ span{
 @keyframes cursor{
     to{
         border-left:  3px solid var(--primary);
-    }
-}
-
-@keyframes words{
-    0%, 20%{
-        content: "Web Developer";
-    }
-    21%, 40%{
-        content: "Mobile Dev";
-    }
-    41%, 60%{
-        content: "Web Designer";
-    }
-    61%, 80%{
-        content: "Youtuber";
-    }
-    81%, 100%{
-        content: "Script Writer";
     }
 }
 
