@@ -173,7 +173,7 @@ span{
     font-size: 2rem;
     border-radius: 50%;
     margin: 3rem 1.5rem 3rem 0;
-    transition: 0.3s ease;
+    transition: 0.5s ease;
     color: var(--primary);
 }
 
@@ -193,7 +193,7 @@ span{
     letter-spacing: 0.3rem;
     font-weight: 600;
     border: 2px solid var(--primary);
-    transition: 0.3s ease;
+    transition: 0.5s ease;
     cursor: pointer;
 }
 
@@ -212,11 +212,9 @@ span{
 
 
 /* Animasi Kalimat kelip2
-
 .typing-text span{
     position: relative;
 }
-
 .typing-text span::before{
     content: "Software Developer";
     color: var(--primary);
@@ -289,6 +287,7 @@ span{
     margin : 20px 20px ;
     align-items: flex-start;
     padding: 2rem;
+    transition: 0.5s ease;
 }
 .service-childcard:hover{
     transform: scale(1.05);
@@ -361,13 +360,15 @@ span{
     height: 90%;
     margin : 20px 20px ;
     align-items: flex-start;
+    justify-content: center;
     padding: 2.5rem;
+    transition: 0.5s ease;
 }
 
 .skills-card:hover{
     transform: scale(1.05);
     box-shadow: 0 0 20px var(--secondary);
-    transition: 0.2s ease;
+    transition: 0.5s ease;
 }
 
 .skills-card i{
@@ -386,15 +387,17 @@ span{
     font-weight: 400;
     color: var(--text-color);
     margin: 0.4rem 0rem;
-    margin-bottom: 1.2rem;
+    margin-bottom: 6rem;
 }
 
 .skills-card a{
     font-size: 1rem;
-    color: var(--text-color);
+    color: var(--background);
     display: block;
     margin: 0 auto;
     width: fit-content;
+    background-color: var(--primary);
+    padding: 1rem;
 }
 
 .education{
