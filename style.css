@@ -474,7 +474,7 @@ span{
 
 .offer-section{
     width: 100%;
-    height: 1000px;
+    height: 600px;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -485,20 +485,38 @@ span{
 .offer-container{
     background-color: var(--primary);
     width: 85%;
-    height: 30%;
+    height: 80%;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin-top: 8%;
 }
 
 .offer-button{
     background-color: var(--primary);
     width: 20%;
-    height: 12%;
+    height: 30%;
     margin-top: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.5s ease;
+}
+
+.offer-button:hover{
+    transform: scale(1.05);
+    transition: 0.5s ease;
+}
+
+.site-footer{
+    background-color: var(--primary);
+    color: var(--secondary);
+    padding: 20px 0px;
+    text-align: center;
+}
+
+.container-footer p{
+    font-size: 14px;
 }
 
 @keyframes scroll {
