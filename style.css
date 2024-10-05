@@ -133,6 +133,7 @@ section{
 }
 
 .home .home-content h1{
+    margin-top: 40px;
     font-size: 4rem;
     font-weight:600;
     line-height:1.3;
@@ -195,6 +196,7 @@ span{
     border: 2px solid var(--primary);
     transition: 0.5s ease;
     cursor: pointer;
+    margin-bottom: 120px;
 }
 
 .btn:hover{
@@ -253,12 +255,14 @@ span{
 .service-section{
     /* border: 1px solid white; */
     width: 100%;
-    height: 1000px;
+    height: 900px;
     align-items: center;
     justify-content: center;
     display: flex;
     flex-direction: column;
     position: relative;
+    margin-top: 0px;
+    padding-top: 0px;
 }
 
 .service-container{
@@ -311,7 +315,7 @@ span{
     font-weight: 400;
     color: var(--text-color);
     margin: 0.5rem 0rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 .service-childcard a{
@@ -325,7 +329,7 @@ span{
 .skills{
     /* border: 1px solid black; */
     width: 100%;
-    height: 1000px;
+    height: 800px;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -335,30 +339,33 @@ span{
 .skills-container{
     /* border: 1px solid blue; */
     width: 95%;
-    height: 100%;
+    height: 120%;
     align-items: center;
     justify-content:flex-start;
     display: flex;
     flex-direction: column;
     position: relative;
+    margin-top: 20px;
 }
 
 .skills-row{
     /* border: 1px solid yellow; */
     width: 100%;
-    height: 50%;
+    height: 45%;
     align-items: center;
     justify-content: center;
     display: flex;
     flex-direction: row;
     position: relative;
+    margin-bottom: 0px;
+    margin-top: 10px;
 }
 
 .skills-card{
     background-color: var(--secondary);
-    width: 30%;
-    height: 90%;
-    margin : 20px 20px ;
+    width: 25%;
+    height: 95%;
+    margin : 0px 20px ;
     align-items: flex-start;
     justify-content: center;
     padding: 2.5rem;
@@ -387,7 +394,7 @@ span{
     font-weight: 400;
     color: var(--text-color);
     margin: 0.4rem 0rem;
-    margin-bottom: 6rem;
+    margin-bottom: 1rem;
 }
 
 .skills-card a{
@@ -397,7 +404,7 @@ span{
     margin: 0 auto;
     width: fit-content;
     background-color: var(--primary);
-    padding: 1rem;
+    padding: 0.8rem;
 }
 
 .education{
@@ -405,16 +412,18 @@ span{
 }
 
 .education-row{
-    border: 1px solid green;
+    margin-top: 50px;
+    /* border: 1px solid green; */
     width: 100%;
-    height: 20%;
+    height: 10%;
     flex-direction: row;
     display: flex;
     position: relative;
+    margin-bottom: 20px;
 }
 
 .leading-education{
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
     width: 100%;
     height: 100%;
 }
@@ -443,23 +452,35 @@ span{
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
     white-space: nowrap;
-}
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow: hidden;
+}   
 
 .education-card {
-    border: 1px solid gray;
-    width: 50%;
-    height: 600px;
+    /* border: 1px solid gray; */
+    width: 40%;
+    height: 400px;
     scroll-snap-align: start;
     flex-shrink: 0; 
     animation: scroll 7s linear infinite;
+    margin: 0px 15px;
+    transition: transform 0.5 ease ;
+    animation: scroll 10s infinite;
+}
+
+.education-card img{
+    width: 100%;
+    margin-bottom: 30px ;
+    box-shadow: 0 0 5px black;
 }
 
 .card-educard{
-    border: 1px solid green;
-    width: 100%;
+    /* border: 1px solid green; */
     height: 70%;
     align-items: center;
     justify-content: center;
+    display: flex;
     display: flex;
 }
 
@@ -468,8 +489,9 @@ span{
 }
 
 .text-educard1{
-    margin-left: 11%;
+    margin-left: 10%;
     font-weight: 400;
+    margin-bottom: 0px;
 }
 
 .offer-section{
@@ -480,12 +502,13 @@ span{
     display: flex;
     padding-bottom: 10%;
     flex-direction: column;
+    margin: 35px 0px;
 }
 
 .offer-container{
     background-color: var(--primary);
     width: 85%;
-    height: 80%;
+    height: 120%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -495,7 +518,7 @@ span{
 .offer-button{
     background-color: var(--primary);
     width: 20%;
-    height: 30%;
+    height: 40%;
     margin-top: 15px;
     display: flex;
     justify-content: center;
@@ -517,6 +540,18 @@ span{
 
 .container-footer p{
     font-size: 14px;
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(0); }  /* "Berhenti" di slide pertama */
+    25% { transform: translateX(-100%); }
+    45% { transform: translateX(-100%); }  /* "Berhenti" di slide kedua */
+    50% { transform: translateX(-200%); }
+    70% { transform: translateX(-200%); }  /* "Berhenti" di slide ketiga */
+    75% { transform: translateX(-300%); }
+    95% { transform: translateX(-300%); }  /* "Berhenti" di slide terakhir */
+    100% { transform: translateX(0); }  /* Kembali ke slide pertama */
 }
 
 @keyframes scroll {
