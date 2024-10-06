@@ -119,6 +119,32 @@ nav a.active{
     }
 }
 
+@media (max-width: 768px){
+    .home {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .home .home-img img {
+        width: 60vw;
+    }
+    .skills-row, .service-rowcard {
+        flex-direction: column;
+    }
+    .skills-card, .service-childcard{
+        width: 100%;
+    }
+    .education-carousel{
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+    }
+    .social-icons {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
 section{
     padding: 5rem 9% 1rem;
 }
@@ -161,7 +187,10 @@ span{
 
 .home-img img{
     position: relative;
-    width: 32vw;}
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+}
 
 .social-icons a{
     display: inline-flex;
@@ -242,11 +271,13 @@ span{
     align-items: center;
     z-index: 10;
     position: absolute;
+    flex-wrap: wrap;
  }
 
 .service-childcard{
     background-color: var(--secondary);
-    width: 450px;
+    width: 100%;
+    max-width: 450px;
     height: 330px;
     margin : 20px 20px ;
     align-items: flex-start;
@@ -308,8 +339,8 @@ span{
     margin-top: 20px;
 }
 
-.skills-row{
-    /* border: 1px solid yellow; */
+/* .skills-row{
+    border: 1px solid yellow;
     width: 100%;
     height: 45%;
     align-items: center;
@@ -319,6 +350,12 @@ span{
     position: relative;
     margin-bottom: 0px;
     margin-top: 10px;
+    flex-wrap: wrap;
+} */
+.skills-row{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
 }
 
 .skills-card{
