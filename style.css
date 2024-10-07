@@ -152,8 +152,8 @@ section{
 .home{
     margin-top : 40px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content:flex-start;
+    align-items:center;
     gap: 8rem;
     background-color: var(--background);
 }
@@ -186,10 +186,7 @@ span{
 }
 
 .home-img img{
-    position: relative;
-    width: 100%;
-    max-width: 250px;
-    height: auto;
+    width: 500px;
 }
 
 .social-icons a{
