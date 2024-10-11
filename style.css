@@ -260,7 +260,7 @@ span{
     z-index: 5;
 }
 .service-rowcard{
-    /* border: 1px solid blue; */
+    border: 1px solid blue;
     width: 80%;
     height: 50%;
     display: flex;
