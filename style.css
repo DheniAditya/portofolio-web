@@ -303,8 +303,6 @@ span{
     font-size: 1rem;
     font-weight: 400;
     color: var(--text-color);
-    margin: 0.5rem 0rem;
-    margin-bottom: 2rem;
 }
 
 .service-childcard a{
@@ -443,36 +441,23 @@ span{
     /* border: 1px solid blue; */
     flex-direction: row;
     display: flex;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-    scroll-snap-type: x mandatory;
-    white-space: nowrap;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-    overflow: hidden;
 }   
 
 .education-card {
     /* border: 1px solid gray; */
-    width: 40%;
-    height: 400px;
-    scroll-snap-align: start;
-    flex-shrink: 0; 
-    animation: scroll 7s linear infinite;
+    width: 60%;
+    height: 600px;
     margin: 0px 15px;
-    transition: transform 0.5 ease ;
-    animation: scroll 10s infinite;
 }
 
 .education-card img{
     width: 100%;
-    margin-bottom: 30px ;
     box-shadow: 0 0 5px black;
 }
 
 .card-educard{
     /* border: 1px solid green; */
-    height: 70%;
+    height: 40%;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -480,11 +465,11 @@ span{
 }
 
 .text-educard{
-    margin-left: 10%;
+    margin-left: 5%;
 }
 
 .text-educard1{
-    margin-left: 10%;
+    margin-left: 6%;
     font-weight: 400;
     margin-bottom: 0px;
 }
@@ -535,27 +520,6 @@ span{
 
 .container-footer p{
     font-size: 14px;
-}
-
-@keyframes scroll {
-    0% { transform: translateX(0); }
-    20% { transform: translateX(0); }  /* "Berhenti" di slide pertama */
-    25% { transform: translateX(-100%); }
-    45% { transform: translateX(-100%); }  /* "Berhenti" di slide kedua */
-    50% { transform: translateX(-200%); }
-    70% { transform: translateX(-200%); }  /* "Berhenti" di slide ketiga */
-    75% { transform: translateX(-300%); }
-    95% { transform: translateX(-300%); }  /* "Berhenti" di slide terakhir */
-    100% { transform: translateX(0); }  /* Kembali ke slide pertama */
-}
-
-@keyframes scroll {
-    0% {
-        transform: translateX(0);
-    }
-    80%{
-        transform: translateX(-100%);
-    }
 }
 
 @keyframes cursor{
