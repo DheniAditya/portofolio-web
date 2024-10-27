@@ -430,6 +430,11 @@ span{
     display: flex;
 }
 
+.education-button:hover{
+    transform: scale(1.2);
+    transition: 0.5s ease;
+}
+
 .text-edubutton{
     color: var(--secondary);
     align-self: center;
