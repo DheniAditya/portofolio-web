@@ -81,56 +81,10 @@ nav a.active{
     border-bottom: 3px solid var(--primary);
 }
 
-@media(max-width:995px){
-    *{
-        font-size: 90%;
-    }
-
-    nav{
-        position: absolute;
-        display: none;
-        top: 0;
-        right: 0;
-        width:40%;
-        border-left: 3px solid var(--primary);
-        border-bottom: 3px solid var(--primary);
-        border-bottom-left-radius: 2rem;
-        padding: 1rem solid;
-        background-color: var(--background);
-        border-top: 0.1rem solid var(--background);
-    }
-
-    nav.active{
-        display:block;
-    }
-
-    nav a{
-        display: block;
-        font-size: 2rem;
-        margin: 3rem 0;
-        transition: 0.5s ease;
-    }
-
-    nav a:hover,
-    nav a.active{
-        padding: 1rem;
-        border-radius: 0.5rem;
-        border-bottom: 0.5rem solid var(--primary);
-    }
+.service-container{
+    overflow: auto;
 }
-
-@media (max-width: 768px){
-    .header {
-        
-    }
-    .home {
-        flex-direction: column;
-        gap: 2rem;
-    }
-    .home .home-img img {
-        width: 60vw;
-    }
-    .skills-row, .service-rowcard {
+    .skills-row{
         flex-direction: column;
     }
     .skills-card, .service-childcard{
@@ -146,7 +100,7 @@ nav a.active{
         flex-wrap: wrap;
         justify-content: center;
     }
-}
+
 
 section{
     padding: 5rem 9% 1rem;
@@ -263,7 +217,7 @@ span{
     z-index: 5;
 }
 .service-rowcard{
-    /* border: 1px solid blue; */
+    border: 1px solid blue;
     width: 80%;
     height: 50%;
     display: flex;
@@ -351,11 +305,6 @@ span{
     margin-top: 10px;
     flex-wrap: wrap;
 }
-/* .skills-row{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 2rem;
-} */
 
 .skills-card{
     background-color: var(--secondary);
@@ -534,30 +483,5 @@ span{
 @keyframes cursor{
     to{
         border-left:  3px solid var(--primary);
-    }
-}
-
-@media (max-width: 1000px){
-    .home{
-        gap: 4rem;
-    }
-}
-
-@media(max-width:995px) {
-    .home{
-        flex-direction: column;
-        margin: 5rem 4rem;
-    }
-    .home .home-content h3{
-        font-size: 2.5rem;
-    }
-
-    .home-content h1{
-        font-size: 5rem;
-    }
-
-    .home-img img{
-        width: 70vw;
-        margin-top: 4rem;
     }
 }
