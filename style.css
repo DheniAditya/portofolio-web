@@ -120,6 +120,9 @@ nav a.active{
 }
 
 @media (max-width: 768px){
+    .header {
+        
+    }
     .home {
         flex-direction: column;
         gap: 2rem;
@@ -453,6 +456,7 @@ span{
     width: 60%;
     height: 600px;
     margin: 0px 15px;
+    cursor: pointer;
 }
 
 .education-card img{
